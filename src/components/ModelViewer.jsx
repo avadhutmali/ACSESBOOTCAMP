@@ -25,7 +25,7 @@ const ModelViewer = ({ modelPath, scale = 1, position = [0, 0, 0] }) => {
   };
 
   return (
-    <div className=" h-[70vh] flex items-center justify-center">
+    <div className="h-[45vh] lg:h-[70vh] flex items-center justify-center">
         <div className="md:h-[70vh] md:w-1/2 h-[30vh]  flex items-center">
       <Canvas camera={{ position: [0, 0, 5] }} >
         {/* Lighting */}

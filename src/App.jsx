@@ -18,7 +18,7 @@ const App = () => {
       }}
     >
       <Header />
-      <ModelViewer modelPath="/c.glb" scale={0.09} />
+      <ModelViewer modelPath="/c.glb" scale={0.1} />
       <CountDown />
       <Roadmap />
       <CustomEvents />
