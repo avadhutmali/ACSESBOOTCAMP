@@ -3,10 +3,10 @@ import CircleComponent from "./CircleComponent";
 
 const Topics = () => {
   return (
-    <div className="mx-auto max-w-7xl h-[70vh] flex flex-col lg:flex-row items-center justify-between px-4 md:mt-20">
-      <div className="w-full lg:w-1/3 p-8 text-white">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-6">Heading</h1>
-        <p className="text-lg sm:text-xl mb-6">
+    <div className="mx-auto max-w-7xl h-auto lg:h-[70vh] flex flex-col lg:flex-row items-center justify-between px-4 py-8">
+      <div className="w-full lg:w-1/3 p-4 lg:p-8 text-white">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6">Heading</h1>
+        <p className="text-base sm:text-lg lg:text-xl mb-4 lg:mb-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
           aspernatur cupiditate ducimus illum rem excepturi sunt minima dolorem
           eum quos impedit quidem molestiae itaque adipisci dolores, modi
@@ -14,7 +14,7 @@ const Topics = () => {
         </p>
         <button
           type="submit"
-          className="w-full sm:w-[15vw] flex justify-center gap-2 items-center shadow-xl text-sm sm:text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 text-black before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-blue-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+          className="w-full sm:w-auto flex justify-center gap-2 items-center shadow-xl text-sm sm:text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 text-black before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-blue-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
         >
           Register
           <svg
