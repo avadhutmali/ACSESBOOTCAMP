@@ -11,7 +11,7 @@ import Footer from "./components/Footer.jsx";
 const App = () => {
   return (
     <div
-      className="min-h-screen w-full "
+      className="min-h-screen w-full overflow-x-hidden"
       style={{
         background:
           "linear-gradient(180deg, #01072b, #041a41, #062959, #043972, #24528b, #5074a2, #7997b9, #a5bbd1)",
