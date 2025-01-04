@@ -5,11 +5,12 @@ import Roadmap from "./components/Roadmap";
 import CustomEvents from "./components/CustomEvents.jsx";
 import CountDown from "./components/CountDown.jsx";
 import Topics from "./components/Topics.jsx";
+import Form from "./components/Form.jsx";
 
 const App = () => {
   return (
     <div
-      className="h-[400vh] w-full"
+      className="min-h-screen w-full"
       style={{
         background:
           "linear-gradient(180deg, #01072b, #041a41, #062959, #043972, #24528b, #5074a2, #7997b9, #a5bbd1)",
@@ -21,6 +22,7 @@ const App = () => {
       <Roadmap />
       <CustomEvents />
       <Topics />
+      <Form />
     </div>
   );
 };
