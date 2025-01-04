@@ -6,6 +6,7 @@ import CustomEvents from "./components/CustomEvents.jsx";
 import CountDown from "./components/CountDown.jsx";
 import Topics from "./components/Topics.jsx";
 import Form from "./components/Form.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <CustomEvents />
       <Topics />
       <Form />
+      <Footer />
     </div>
   );
 };
