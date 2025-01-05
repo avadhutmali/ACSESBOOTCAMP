@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header";
 import ModelViewer from "./components/ModelViewer";
 import Roadmap from "./components/Roadmap";
@@ -7,8 +7,19 @@ import CountDown from "./components/CountDown.jsx";
 import Topics from "./components/Topics.jsx";
 import Form from "./components/Form.jsx";
 import Footer from "./components/Footer.jsx";
+import Lenis from "lenis";
 
 const App = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  });
   return (
     <div
       className="min-h-screen w-full overflow-x-hidden"
