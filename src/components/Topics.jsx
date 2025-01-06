@@ -3,7 +3,7 @@ import CircleComponent from "./CircleComponent";
 
 const Topics = () => {
   return (
-    <div className="mx-auto max-w-7xl h-auto lg:h-[70vh] flex flex-col lg:flex-row items-center justify-between px-4 py-8 md:mt-2x`0">
+    <div className="mx-auto max-w-7xl h-auto lg:h-[70vh] flex flex-col lg:flex-row items-center justify-between px-4 py-8 md:mt-20">
       <div className="w-full lg:w-1/3 p-4 lg:p-8 text-white">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6">Heading</h1>
         <p className="text-base sm:text-lg lg:text-xl mb-4 lg:mb-6">
