@@ -1,17 +1,30 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
-    college: "",
-    year: "",
+    collegeName: "",
+    yearOfStudy: "",
+    laptopAvailable: "",
     email: "",
-    contact: "",
+    contactNum: "",
     transactionId: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    try {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+      console.log("Form submitted successfully:", response.data);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
@@ -54,9 +67,47 @@ const Form = () => {
               id="college"
               className="mt-1 block w-full rounded-lg border-transparent px-4 py-2 shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300 bg-white text-gray-900"
               placeholder="Enter your college name"
-              value={formData.college}
+              value={formData.collegeName}
               onChange={(e) =>
-                setFormData({ ...formData, college: e.target.value })
+                setFormData({ ...formData, collegeName: e.target.value })
+              }
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="yearOfStudy"
+              className="block text-sm font-medium text-white"
+            >
+              Year of Study:
+            </label>
+            <input
+              type="number"
+              id="yearOfStudy"
+              className="mt-1 block w-full rounded-lg border-transparent px-4 py-2 shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300 bg-white text-gray-900"
+              placeholder="Enter year of Study"
+              value={formData.yearOfStudy}
+              onChange={(e) =>
+                setFormData({ ...formData, yearOfStudy: e.target.value })
+              }
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="laptopAvailable"
+              className="block text-sm font-medium text-white"
+            >
+              Laptop Available:
+            </label>
+            <input
+              type="text"
+              id="laptopAvailable"
+              className="mt-1 block w-full rounded-lg border-transparent px-4 py-2 shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300 bg-white text-gray-900"
+              placeholder=""
+              value={formData.laptopAvailable}
+              onChange={(e) =>
+                setFormData({ ...formData, laptopAvailable: e.target.value })
               }
             />
           </div>
@@ -93,13 +144,39 @@ const Form = () => {
                 id="contact"
                 className="mt-1 block w-full rounded-lg border-transparent px-4 py-2 shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300 bg-white text-gray-900"
                 placeholder="Enter your contact number"
-                value={formData.contact}
+                value={formData.contactNum}
                 onChange={(e) =>
-                  setFormData({ ...formData, contact: e.target.value })
+                  setFormData({ ...formData, contactNum: e.target.value })
                 }
               />
             </div>
           </div>
+
+          <div>
+              <label className="block text-sm font-medium text-white">
+                ID Card Photo:
+              </label>
+              <div className="mt-1 flex justify-center items-center px-6 py-4 border-2 border-dashed rounded-lg transition hover:shadow-lg hover:border-indigo-400 bg-white">
+                <div className="text-center">
+                  <div className="mx-auto h-12 w-12 text-gray-400">📷</div>
+                  <label
+                    htmlFor="transaction-upload"
+                    className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500"
+                  >
+                    <span>Choose File</span>
+                    <input
+                      id="transaction-upload"
+                      name="transaction-upload"
+                      type="file"
+                      className="sr-only"
+                      onChange={(e) =>
+                        setFormData({ ...formData, collegeId: e.target.files[0] })
+                      }
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
 
           {/* Payment QR Codes */}
           <div className="space-y-6">
@@ -155,6 +232,9 @@ const Form = () => {
                       name="transaction-upload"
                       type="file"
                       className="sr-only"
+                      onChange={(e) =>
+                        setFormData({ ...formData, transactionPhoto: e.target.files[0] })
+                      }
                     />
                   </label>
                 </div>
@@ -174,6 +254,7 @@ const Form = () => {
         </form>
       </div>
     </div>
+
   );
 };
 
