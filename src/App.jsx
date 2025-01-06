@@ -12,7 +12,7 @@ import Lenis from "lenis";
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis();
-
+    //ffff
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
