@@ -76,25 +76,6 @@ const Form = () => {
 
           <div>
             <label
-              htmlFor="yearOfStudy"
-              className="block text-sm font-medium text-white"
-            >
-              Year of Study:
-            </label>
-            <input
-              type="number"
-              id="yearOfStudy"
-              className="mt-1 block w-full rounded-lg border-transparent px-4 py-2 shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300 bg-white text-gray-900"
-              placeholder="Enter year of Study"
-              value={formData.yearOfStudy}
-              onChange={(e) =>
-                setFormData({ ...formData, yearOfStudy: e.target.value })
-              }
-            />
-          </div>
-
-          <div>
-            <label
               htmlFor="laptopAvailable"
               className="block text-sm font-medium text-white"
             >
