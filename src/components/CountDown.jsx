@@ -7,7 +7,7 @@ const Countdown = () => {
   const [seconds, setSeconds] = useState("00");
 
   useEffect(() => {
-    const targetDate = new Date(2025, 0, 26, 8, 0, 0, 0).getTime();
+    const targetDate = new Date(2025, 0, 16, 0, 0, 0, 0).getTime();
     const pad = (n) => (n < 10 ? "0" : "") + n;
 
     const interval = setInterval(() => {
