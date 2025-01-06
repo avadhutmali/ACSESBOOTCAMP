@@ -28,7 +28,7 @@ const FlipCard = ({ EventName, des, index }) => {
           onClick={handleClick}
         >
           {/* Front */}
-          <div className="flip-card-front absolute w-full h-full bg-gray-500 text-white flex justify-center items-center rounded-2xl">
+          <div className="flip-card-front absolute w-full  h-full bg-gray-500 text-white flex justify-center items-center rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 rounded-2xl">
             <div className="text-center">
               <img
                 src={images[index - 1]} // Access images using index-1
