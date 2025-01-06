@@ -5,7 +5,7 @@ const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
     collegeName: "",
-    yearOfStudy: "0",
+    yearOfStudy: "",
     laptopAvailable: "",
     email: "",
     contactNum: "",
@@ -73,10 +73,7 @@ const Form = () => {
               }
             />
           </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> 5746c614dee9de561ca0cdfa994b8f1b01b7ffe4
           <div>
             <label
               htmlFor="laptopAvailable"
@@ -94,7 +91,7 @@ const Form = () => {
                 setFormData({ ...formData, laptopAvailable: e.target.value })
               }
             />
-          </div> 
+          </div>
 
           {/* Email and Contact */}
           <div className="space-y-6">
