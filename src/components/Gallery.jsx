@@ -1,12 +1,18 @@
 import React, { useState } from "react";
-import session1 from "./images/session1.png";
-import session2 from "./images/session2.png";
-import session3 from "./images/session3.png";
-import session4 from "./images/session4.png";
+import img1 from "./images/img1.jpg";
+import img2 from "./images/img2.jpg";
+import img3 from "./images/img3.jpg";
+import img4 from "./images/img4.jpg";
+import img5 from "./images/img5.jpg";
+import img6 from "./images/img6.jpg";
+import img7 from "./images/img7.jpg";
+import img8 from "./images/img8.jpg";
+import img9 from "./images/img9.jpg";
+import img10 from "./images/img10.jpg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Gallery = () => {
-  const images = [session1, session2, session3, session4];
+  const images = [img1, img2, img3 , img4, img5, img6, img7, img8, img9, img10];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
@@ -21,11 +27,11 @@ const Gallery = () => {
 
   return (
     <div
-      className="max-w-6xl mx-auto text-center py-8 px-2"
+      className="max-w-6xl mt-8 mx-auto text-center py-8 px-2"
       id="gallery"
       data-aos="fade-up"
     >
-      <header className="text-3xl font-semibold mb-6">GALLERY</header>
+      <header className="text-4xl text-white font-semibold mb-6">GALLERY</header>
       <div className="bg-red-300 relative inline-block rounded-xl overflow-hidden">
         <button
           className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition"
@@ -35,7 +41,7 @@ const Gallery = () => {
         </button>
         <div className="flex justify-center items-center w-full">
           <img
-            className="w-[600px] h-auto max-h-[500px] object-cover"
+            className="w-[600px] h-[400px] max-h-[500px] md:w-[800px] object-cover"
             src={images[currentIndex]}
             alt={`session-${currentIndex + 1}`}
           />
