@@ -8,6 +8,7 @@ import Topics from "./components/Topics.jsx";
 import Form from "./components/Form.jsx";
 import Footer from "./components/Footer.jsx";
 import Lenis from "lenis";
+import Gallery from "./components/Gallery.jsx";
 
 const App = () => {
   useEffect(() => {
@@ -34,6 +35,7 @@ const App = () => {
       <Roadmap />
       <CustomEvents />
       <Topics />
+      <Gallery />
       <Form />
       <Footer />
     </div>
