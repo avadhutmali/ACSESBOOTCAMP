@@ -9,6 +9,7 @@ import Form from "./components/Form.jsx";
 import Footer from "./components/Footer.jsx";
 import Lenis from "lenis";
 import Gallery from "./components/Gallery.jsx";
+import FAQ from "./components/FAQ.jsx";
 
 const App = () => {
   useEffect(() => {

@@ -31,6 +31,7 @@ const FlipCard = ({ EventName, des, index }) => {
                 className="w-full h-full object-cover"
               />
             </div>
+            
           </div>
 
           {/* Back */}

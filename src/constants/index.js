@@ -1,51 +1,59 @@
+import app1 from '../components/apps/app1.png'; 
+import app2 from '../components/apps/app2.png';
+import app3 from '../components/apps/app3.png';
+import app4 from '../components/apps/app4.png';
+import app5 from '../components/apps/app5.png';
+import app6 from '../components/apps/app6.png';
+import app7 from '../components/apps/app7.png';
+
 export const collabApps = [
   {
     id: 1,
-    icon: "https://i.pinimg.com/236x/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.jpg",
-    width: 24,
-    height: 24,
+    icon: app1,
+    width: 60,
+    height: 60,
     title: "App 1",
   },
   {
     id: 2,
-    icon: "https://i.pinimg.com/236x/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.jpg",
-    width: 24,
-    height: 24,
+    icon: app2,
+    width: 60,
+    height: 60,
     title: "App 2",
   },
   {
     id: 3,
-    icon: "https://i.pinimg.com/236x/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.jpg",
-    width: 24,
-    height: 24,
+    icon: app3,
+    width: 60,
+    height: 60,
     title: "App 3",
   },
   {
     id: 4,
-    icon: "https://i.pinimg.com/236x/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.jpg",
-    width: 24,
-    height: 24,
+    icon: app4,
+    width: 60,
+    height: 60,
     title: "App 4",
   },
   {
     id: 5,
-    icon: "https://i.pinimg.com/236x/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.jpg",
-    width: 24,
-    height: 24,
+    icon: app5,
+    width: 60,
+    height: 60,
     title: "App 5",
   },
   {
     id: 6,
-    icon: "https://i.pinimg.com/236x/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.jpg",
-    width: 24,
-    height: 24,
+    icon: app6,
+    width: 60,
+    height: 60,
     title: "App 6",
   },
   {
     id: 7,
-    icon: "https://i.pinimg.com/236x/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.jpg",
-    width: 24,
-    height: 24,
+    icon: app7,
+    width: 60,
+    height: 60,
     title: "App 7",
   },
 ];

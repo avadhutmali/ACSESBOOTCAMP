@@ -73,6 +73,10 @@ const Form = () => {
               }
             />
           </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5746c614dee9de561ca0cdfa994b8f1b01b7ffe4
           <div>
             <label
               htmlFor="laptopAvailable"
